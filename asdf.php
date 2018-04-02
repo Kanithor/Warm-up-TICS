@@ -1,63 +1,77 @@
 <html>
 <head>
-
   <link href="calc.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="calculadora.js"></script>
+  <script type="text/javascript" src="calc.js"></script>
 
 </head>
 
-<body>
+<body style="background-color:powderblue;">
+
+  <h1 style="font-family:arial;">
+  <center>Get your CAE</center>
+  </h1>
 
   <div id="container">
+    <img class="middle">
 
-    <h2>Get your CAE</h2>
-    <div id="calc_src">
-      <form name="calc_form"
-        <table style="margin:10px;"
-          <tr>
-            <td>Monto solicitado:</td>
-            <td><input type="text" name="calc_amount" size="10"/></td>
-          </tr>
+      <div id="calc_src" >
+        <form name="calc_form"
+          <table style="margin:9px;">
 
-          <tr>
-            <td>Número de meses:</td>
-            <td><input type="text" name="calc_months" size="10"/></td>
-          </tr>
-
-          <tr>
-            <td>Valor de cuota:</td>
-            <td><input type="text" name="calc_amount_months" size="10"/></td>
-          </tr>
-
-          <tr>
-            <td>Gastos adicionales:</td>
-            <td><input type="text" name="calc_GA" size="10"/></td>
-          </tr>
-
-          <tr>
-            <td><input type="button" onclick="validate()" value="Calcular"/></td>
-            <td><input type="button" onclick="startOver()" value="Start Over"/></td>
-          </tr>
-
-        </table>
-      </form>
+            <center>
+              <tr>
+                <td>Monto solicitado: <br>$</td>
+                <td><input type="text" name="calc_amount" size="auto" value="0"/></td></br>
+              </tr>
 
 
+              <tr>
+                <td>Número de meses: <br></td>
+                <td><input type="text" name="calc_months" size="auto" value="0"/></td></br>
+              </tr>
+
+
+              <tr>
+                <td>Valor de cuota: <br>$</td>
+                <td><input type="text" name="calc_amount_months" size="auto" value="0"/></td></br>
+              </tr>
+
+
+              <tr>
+                <td>Gastos adicionales: <br>$</td>
+                <td><input type="text" name="calc_GA" size="auto" value="0"/></td></br>
+              </tr>
+
+              <tr>
+                <br></br>
+                <!--<td><input type="button" onclick="validate()" value="Calcular"/></td>-->
+                <td><input type="button" onclick="startOver()" value="Reestablecer"/></td>
+              </tr>
+            </center>
+          </table>
+        </form>
     </div>
 
     <div id="calc_info">
-
+      <p><i>Monto solicitado</i>: Refiere a cantidad de dinero recibida por el servicio.</p>
+      <p><i>Número de meses</i>: Cantidad en meses a pagar el préstamo.</p>
+      <p><i>Valor de cuota</i>: Cantidad de dinero a cancelar por cada mes plazo.</p>
+      <p><i>Gastos Adicionales</i>: Monto de gastos externos al crédito en si (seguros, notarios, etc).</p>
     </div>
-
+    <!--
     <div id="table_header">
-
+      table header
     </div>
 
     <div id="table">
-
+      table
     </div>
-
+    -->
   </div>
+
+  <a href="results.html" onclick="validate(); return false;">
+  <center><img src="arrow.png" alt="Continuar" >
+  </a>
 
 </body>
 </html>
