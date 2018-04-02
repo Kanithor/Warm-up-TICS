@@ -1,0 +1,1 @@
+GET YOUR CAE es una herramienta que te facilitará obtener la información acerca del porcentaje correspondiente a costo anual equivalente real de un crédito consumido ya sea hipotecario o de consumo, a través de operaciones a las variables de monto solicitado, CAE, plazo en cuotas y gastos adicionales, para así entregar el CAE final asociado al servicio.
