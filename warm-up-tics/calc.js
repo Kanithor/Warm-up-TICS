@@ -42,7 +42,7 @@ function validate(){
 }
 
 function calculate(){
-  var total = 234;
-  return document.getElementById('resultDiv').innerHTML = total.toString();
+  /*var total = 234;
+  return document.getElementById('resultDiv').innerHTML = total.toString();*/
 ;
 }
