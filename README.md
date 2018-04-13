@@ -4,4 +4,5 @@ El contenido de la página web para presentar resultados está dentro de la carp
 Anotaciones:
 
 +Código se encarga de relleno de formularios erróneos (i.e. ingresar palabras, números negativos, valor a pagar menor a monto solicitado, etc.)
+
 +Los valores entregados por la página web tienen alrededor de un 5% de margen de error, esto puede corresponder a algún bug de código, manejo de cifras fuera de nuestro alcance y/o el trabajo bajo ciertos supuestos tanto conceptuales como numéricos que puedan incurrir en el error mencionado.
